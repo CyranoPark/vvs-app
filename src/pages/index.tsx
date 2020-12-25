@@ -1,6 +1,10 @@
 import Head from 'next/head';
+import useSWR from 'swr';
+import { fetcher } from '../utils/swr';
 
 const Home = () => {
+    const { data } = useSWR('/hello', fetcher);
+
     return (
         <div className="container">
             <Head>
