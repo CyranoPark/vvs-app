@@ -17,7 +17,7 @@ app.prepare()
         const server = express();
 
         server.use('/', express.static(path.resolve('public')));
-        server.get('*', (req, res) => handle(req, res));
+        server.all('*', (req, res) => handle(req, res));
 
         server.listen(port, host, (err) => {
             if (err) throw err;

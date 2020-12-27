@@ -5,7 +5,7 @@ const api = axios.create({
     baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
     timeout: 5000,
     withCredentials: true,
-    paramsSerializer: (params: any) => qs.stringify(params, { indices: false }),
+    paramsSerializer: (params) => qs.stringify(params, { indices: false }),
 });
 
 export default api;

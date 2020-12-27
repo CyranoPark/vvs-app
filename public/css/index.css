@@ -1,0 +1,20 @@
+body {
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    word-spacing: 0.1em;
+    background-color: #fafdff;
+    color: #262626;
+    border-color: #e6e6e6;
+    font-size: 15px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#__next {
+    width: 100%;
+    height: 100%;
+}
